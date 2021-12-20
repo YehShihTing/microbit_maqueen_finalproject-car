@@ -10,14 +10,8 @@ radio.onReceivedNumber(function (receivedNumber) {
         maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 150)
         maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 0)
     } else if (receivedNumber == 5) {
-        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 150)
-        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 150)
-    } else if (receivedNumber == 6) {
-        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 150)
-        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 150)
-    } else if (receivedNumber == 7) {
         maqueen.motorStop(maqueen.Motors.All)
-    } else if (receivedNumber == 8) {
+    } else if (receivedNumber == 0) {
         basic.showIcon(IconNames.Yes)
         basic.pause(500)
         basic.clearScreen()
